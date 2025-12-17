@@ -1,0 +1,40 @@
+.form {
+  background: white;
+  padding: 1.5rem;
+  width: 450px;
+  border-radius: 6px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.field input,
+.field select {
+  padding: 0.5rem;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.actions button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: rgb(92, 92, 188);
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
