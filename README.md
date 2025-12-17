@@ -1,4 +1,4 @@
-# Equipment Management Application
+# Equipment Manager
 
 A full-stack web application for managing equipment records with CRUD operations, search, and sorting capabilities.
 
@@ -147,8 +147,3 @@ Frontend will run at: `http://localhost:3000`
 - Add client-side caching
 - Implement pagination for large datasets
 - Add export functionality (CSV/PDF)
-
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
