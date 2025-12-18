@@ -73,12 +73,15 @@ const Equipment = () => {
   };
 
   const filteredList = equipment
-    .filter((item) =>
-      item.name.toLowerCase().includes(searchText.toLowerCase())
-    )
-    .sort((a, b) =>
-      isAscending ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name)
-    );
+  .filter(item =>
+    item.name.toLowerCase().includes(searchText.toLowerCase())
+  )
+  .sort((a, b) =>
+    isAscending
+      ? new Date(a.lastCleanedDate) - new Date(b.lastCleanedDate)
+      : new Date(b.lastCleanedDate) - new Date(a.lastCleanedDate)
+  );
+
 
   return (
     <div className={styles.container}>
@@ -87,7 +90,7 @@ const Equipment = () => {
 
         <div className={styles.controls}>
           <input
-            placeholder="Search..."
+            placeholder="Search by name..."
             value={searchText}
             onChange={(e) => setSearchText(e.target.value)}
           />
