@@ -51,7 +51,7 @@ const EquipmentForm = ({ onSubmit, editingData, onCancel }) => {
           {editingData ? "Update" : "Add"}
         </button>
 
-        {editingData && (
+        {(
           <button type="button" onClick={onCancel}>
             Cancel
           </button>

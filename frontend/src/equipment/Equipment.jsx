@@ -77,9 +77,7 @@ const Equipment = () => {
       item.name.toLowerCase().includes(searchText.toLowerCase())
     )
     .sort((a, b) =>
-      isAscending
-        ? a.name.localeCompare(b.name)
-        : b.name.localeCompare(a.name)
+      isAscending ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name)
     );
 
   return (
@@ -98,7 +96,10 @@ const Equipment = () => {
             Sort {isAscending ? "↑" : "↓"}
           </button>
 
-          <button onClick={openAddModal}>Add Equipment</button>
+          <button onClick={openAddModal}>
+            Add Equipment
+          </button>
+         
         </div>
       </div>
 
